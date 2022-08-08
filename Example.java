@@ -6,14 +6,15 @@ public class Example {
         int y=sc.nextInt();
         int z=sc.nextInt();
         int n=sc.nextInt();
-        if(x>=n){
-            System.out.println("L1");
+        int a=n-x,b=n-z;
+        if (b<n-z && n-z<0){
+            System.out.println("L3");
         }
-        else if (y>=n){
+        else if(a<n-y && n-y<0){
             System.out.println("L2");
         }
         else{
-            System.out.println("L3");
+            System.out.println("L1");
         }
     }
 }
