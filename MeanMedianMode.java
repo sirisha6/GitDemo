@@ -29,5 +29,23 @@ public class MeanMedianMode {
         } else {
             System.out.println("Medain of the array : " + (double) (array[(length - 1) / 2] + array[length / 2]) / 2.0);
         }
+
+
+
+        int maximumValue=0, count=0, maximumCount=0;
+
+        for(int i=0;i<length;i++) {
+            count = 0;
+            for(int j=0;j<length;j++) {
+                if(array[i] == array[j]) {
+                    count++;
+                }
+            }
+            if (count > maximumCount) {
+                maximumCount = count;
+                maximumValue = array[i];
+            }
+        }
+        System.out.println("Mode of the array : "+maximumValue);
     }
 }
