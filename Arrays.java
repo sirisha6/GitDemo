@@ -16,7 +16,7 @@ public class Arrays {
                 }
             }
         }
-            System.out.println("Mimum number:"+arr[0]);
+            System.out.println("Minimum number:"+arr[0]);
             System.out.print("Maximum number:"+arr[4]);
 
         }
